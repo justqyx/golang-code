@@ -1,0 +1,12 @@
+[submodule "vendor/github.com/astaxie/beego"]
+	path = vendor/github.com/astaxie/beego
+	url = https://github.com/astaxie/beego
+[submodule "vendor/github.com/go-sql-driver/mysql"]
+	path = vendor/github.com/go-sql-driver/mysql
+	url = https://github.com/go-sql-driver/mysql
+[submodule "vendor/github.com/jinzhu/gorm"]
+	path = vendor/github.com/jinzhu/gorm
+	url = https://github.com/jinzhu/gorm
+[submodule "vendor/github.com/jinzhu/inflection"]
+	path = vendor/github.com/jinzhu/inflection
+	url = https://github.com/jinzhu/inflection
