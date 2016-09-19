@@ -11,6 +11,7 @@ type User struct {
 }
 
 func main() {
+
 	db, err := gorm.Open("mysql", "root:root@/test?charset=utf8&parseTime=True&loc=Local")
 
 	if err != nil {
@@ -19,17 +20,18 @@ func main() {
 
 	defer db.Close()
 
+	db.LogMode(true)
 	db.AutoMigrate(&User{})
 
+	// Insert
 	db.Create(&User{Name: "L1212"})
 
 	// Read
 	var user User
-	db.First(&user, 1)
 	db.First(&user, "name = ?", "L1212")
 
-	db.Model(&user).Update("name", "L1213")
+	db.Model(&user).Update("name", "L1212")
 
 	// Delete - deleteuser
-	db.Delete(&user)
+	// db.Delete(&user)
 }
