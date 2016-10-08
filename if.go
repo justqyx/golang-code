@@ -1,18 +1,19 @@
 package main
 
 import (
-    "fmt"
-    "math"
+	"fmt"
+	"math"
 )
 
 func sqrt(x float64) string {
-    if x < 0 {
-        return sqrt(-x) + "i"
-    }
+	if x < 0 {
+		return sqrt(-x) + "i"
+	}
 
-    return fmt.Sprint(math.Sqrt(x))
+	return fmt.Sprint(math.Sqrt(x))
 }
 
-func main()  {
-    fmt.Println(sqrt(2), sqrt(-4))
+func main() {
+	fmt.Println(sqrt(2), sqrt(-4))
+	fmt.Println(sqrt(10), sqrt(100))
 }
