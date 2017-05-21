@@ -1,0 +1,6 @@
+[target]
+path = gopm_example
+
+[deps]
+github.com/sunfmin/fanout = commit:550256f2939ac9f3905c73e0e405f1c59f0ae815
+github.com/mozillazg/go-pinyin = tag:v0.12.0
